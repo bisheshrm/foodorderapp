@@ -3,35 +3,35 @@ import Card from "../UI/Card";
 import classes from "./AvailableMeals.module.css";
 import MealItem from "./MealItem/MealItem";
 
-const DUMMY_MEALS = [
+const CUR_MEALS = [
   {
     id: "m1",
-    name: "Sushi",
-    description: "Finest fish and veggies",
-    price: 22.99,
+    name: "Butter Chicken",
+    description: "Baked Chicken wih creamy sauce",
+    price: 15,
   },
   {
     id: "m2",
-    name: "Schnitzel",
-    description: "A german specialty!",
-    price: 16.5,
+    name: "Goat Curry",
+    description: "Goat meat with curry sauce",
+    price: 18,
   },
   {
     id: "m3",
-    name: "Barbecue Burger",
-    description: "American, raw, meaty",
-    price: 12.99,
+    name: "Combo Biryani",
+    description: "Basmati rice cooked with shrimp, chicken, lamb, green peas, nuts and raisins",
+    price: 20,
   },
   {
     id: "m4",
-    name: "Green Bowl",
-    description: "Healthy...and green...",
-    price: 18.99,
+    name: "Mango Lassi",
+    description: "Mango based yougurt drink",
+    price: 5,
   },
 ];
 
 const AvailableMeals = () => {
-  const mealsList = DUMMY_MEALS.map((meal) => (
+  const mealsList = CUR_MEALS.map((meal) => (
     <MealItem
       id={meal.id}
       key={meal.id}
